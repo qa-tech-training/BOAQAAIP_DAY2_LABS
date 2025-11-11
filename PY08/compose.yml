@@ -1,0 +1,11 @@
+services:
+  api_server:
+    image: bankx-sandbox-api:latest
+    build:
+      context: .
+      dockerfile: Containerfile
+    ports:
+    - target: 8000
+      published: 8000
+    restart: unless-stopped
+
