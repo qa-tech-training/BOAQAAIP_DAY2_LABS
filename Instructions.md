@@ -30,7 +30,7 @@ cd ~/Labs2/PY05
 ```
 4. Deploy the sample API using docker compose:
 ```bash
-docker compose -f compose.yml up -d --build
+sudo docker compose -f compose.yml up -d --build
 ```
 
 ##### Make HTTP get requests
@@ -167,7 +167,7 @@ By the end of this lab, you will have:
 ##### Ensure the example API is Running
 1. Ensure that the sample API server is running (it may still be running from the previous lab):
 ```bash
-sudo docker ps | grep sample-flask-app || sh -c "cd ~/Labs2/PY05; docker compose -f compose.yml up -d --build"
+sudo docker ps | grep sample-flask-app || sudo sh -c "cd ~/Labs2/PY05; docker compose -f compose.yml up -d --build"
 ```
 
 ##### Make a get request
@@ -275,6 +275,9 @@ if __name__ == '__main__':
 ```
 13. The added print statement parses the ERROR header, if it is present, and prints a debug message with this information. Re-run the script again to observe this behaviour.
 
+#### Optional Stretch Tasks
+- Refactor the retry script logic to use an else clause to the while-loop for better handling of loop exit conditions
+
 ### Lab PY07 - Async Programming
 
 #### Objective
@@ -292,7 +295,7 @@ By the end of this lab, you will have:
 ##### Set up the API server for this exercise
 1. Ensure the API server is running:
 ```shell
-sudo docker ps | grep sample-flask-app || sh -c "cd ~/Labs2/PY05; docker compose -f compose.yml up -d --build"
+sudo docker ps | grep sample-flask-app || sudo sh -c "cd ~/Labs2/PY05; docker compose -f compose.yml up -d --build"
 ```
 2. Switch directory into the PY07 directory, and setup a virtual environment:
 ```bash
