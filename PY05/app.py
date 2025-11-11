@@ -116,7 +116,7 @@ def handle_books():
         else:
             return "Method Not Allowed", 405
     
-@app.route('/api/reviews', methods=['GET', 'POST'])
+@app.route('/api/reviews', methods=['GET', 'POST', 'PUT', 'DELETE'])
 def handle_reviews():
     if request.method == 'GET':
         return jsonify(reviews)
