@@ -95,6 +95,7 @@ if __name__ == '__main__':
 ```python
 #! venv/bin/python3
 import requests
+from requests.auth import HTTPDigestAuth
 
 if __name__ == '__main__':
     auth = HTTPDigestAuth('learner', 'p@ssword') # define digest auth info
@@ -119,6 +120,7 @@ Now that we have a book object to work with, we should try using some other requ
 ```python
 #! venv/bin/python3
 import requests
+from requests.auth import HTTPDigestAuth
 
 if __name__ == '__main__':
     auth = HTTPDigestAuth('learner', 'p@ssword')
@@ -134,6 +136,7 @@ if __name__ == '__main__':
 ```python
 #! venv/bin/python3
 import requests
+from requests.auth import HTTPDigestAuth
 
 if __name__ == '__main__':
     auth = HTTPDigestAuth('learner', 'p@ssword')
