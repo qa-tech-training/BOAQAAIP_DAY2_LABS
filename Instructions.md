@@ -1,6 +1,8 @@
 ### Prerequisites
 Clone this repository into your WSL home directory as Labs2:
 ```bash
+cd ~
+git clone https://github.com/qa-tech-training/BOAQAAIP_DAY2_LABS.git Labs2
 ```
 
 ### Lab PY05 - Interacting With APIs
